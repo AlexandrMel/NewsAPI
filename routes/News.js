@@ -24,7 +24,4 @@ router
 router
   .route('/justitie')
   .get(getJustitie)
-
-
-
 module.exports = router;
