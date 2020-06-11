@@ -19,7 +19,7 @@ const app = express();
 app.use(logger('dev'));
 
 /** CONNECT TO MONGO*/
-mongoose.connect( "mongodb+srv://AlexMel:Strechii1989@newsdb-x7jaj.mongodb.net/<dbname>?retryWrites=true&w=majority" ,{
+mongoose.connect( "MongoURI" ,{
 useNewUrlParser: true,
 useCreateIndex: true,
 useUnifiedTopology: true
