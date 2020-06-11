@@ -77,7 +77,8 @@ app.use(function(req, res, next) {
 /** EXPORT PATH */
 module.exports = app;
 
-app.port = 3000;
-app.listen(3000, process.env.IP, function () {
-    console.log("SERVER IS RUNNING");
-})
+app.listen(process.env.PORT || 5000, function () {
+      console.log("SERVER IS RUNNING")})
+// app.listen(3000, process.env.IP, function () {
+//     console.log("SERVER IS RUNNING");
+// })
