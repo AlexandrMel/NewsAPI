@@ -4,7 +4,18 @@ const createError = require("http-errors");
 exports.getPolitic = async (req, res, next) => {
   try {
     const politicNews = await News.find({category: "politic"})
+    console.log('executing after responce sent')
     res.status(200).send(politicNews);
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
+    console.log('executing after responce sent')
   } catch (e) {
     next(e);
   }
@@ -37,6 +48,14 @@ exports.getJustitie = async (req, res, next) => {
   try {
     const justitieNews = await News.find({category: "justitie"})
     res.status(200).send(justitieNews);
+  } catch (e) {
+    next(e);
+  }
+};
+exports.getToate = async (req, res, next) => {
+  try {
+    const ToateNews = await News.find()
+    res.status(200).send(ToateNews);
   } catch (e) {
     next(e);
   }

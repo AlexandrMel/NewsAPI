@@ -2,8 +2,9 @@
   "name": "Data-server-record-store",
   "version": "0.0.0",
   "private": true,
+  "main": "app.js",
   "scripts": {
-    "start": "DEBUG=Data-server-record-store:* nodemon --inspect ./bin/www --ignore 'data/*'",
+    "start": "node app.js",
     "seed": "node seed/seed_db.js"
   },
   "dependencies": {

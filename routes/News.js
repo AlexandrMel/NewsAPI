@@ -6,7 +6,8 @@ const {
   getEconomic,
   getSocial,
   getSport,
-  getJustitie
+  getJustitie,
+  getToate
 } = require('../controllers/NewsController');
 
 router
@@ -24,4 +25,7 @@ router
 router
   .route('/justitie')
   .get(getJustitie)
+router
+  .route('/toate')
+  .get(getToate)
 module.exports = router;
