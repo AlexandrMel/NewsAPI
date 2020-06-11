@@ -9,7 +9,7 @@ const {
   getJustitie,
   getToate
 } = require('../controllers/NewsController');
-
+/////
 router
   .route('/politic')
   .get(getPolitic)
